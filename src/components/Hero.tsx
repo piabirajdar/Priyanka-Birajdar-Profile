@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
           className="flex flex-wrap justify-center items-center gap-6"
         >
           <a
-            href="https://piabirajdar.github.io/files/CV_Priyanka_Birajdar.pdf"
+            href="https://piabirajdar.github.io/files/Resume_Priyanka_Birajdar.pdf"
             target="_blank"
             rel="noreferrer"
             className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-blue-500 hover:text-white transition-all flex items-center gap-2 group shadow-xl"
