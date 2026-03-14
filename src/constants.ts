@@ -142,7 +142,7 @@ export const CERTIFICATIONS: Certification[] = [
   {
     name: "AWS Certified Solutions Architect – Associate",
     issuer: "Amazon Web Services",
-    link: "https://www.credly.com/earner/earned/badge/c8ddf41d-6109-4973-bd25-302d490a7b16"
+    link: "https://www.credly.com/badges/c8ddf41d-6109-4973-bd25-302d490a7b16/public_url"
   },
   {
     name: "Certified Kubernetes Application Developer (CKAD)",
