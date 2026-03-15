@@ -1,11 +1,20 @@
-# Priyanka Birajdar | Software Engineer Portfolio
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Welcome to my professional portfolio website. This project showcases my journey as a Software Engineer, featuring my experience at companies like **C3 AI**, **Tesla**, and **John Deere**, along with my specialized projects in **AI/LLM**, **RAG architectures**, and **Infrastructure Automation**.
+# Run and deploy your AI Studio app
 
-## 🌐 Live Portfolio
-You can view the live website here:
+This contains everything you need to run your app locally.
 
-**[https://priyanka-birajdar-senior-software-engineer-296607012148.us-west1.run.app/]**
+View your app in AI Studio: https://ai.studio/apps/db4707e0-e8de-4687-b310-da8381478d1d
 
----
-*Built with React & Tailwind CSS*
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
