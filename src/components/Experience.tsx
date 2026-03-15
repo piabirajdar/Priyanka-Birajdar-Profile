@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { EXPERIENCES } from '../constants';
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase } from 'lucide-react';
 
 export const Experience: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ export const Experience: React.FC = () => {
 
       <div className="relative">
         {/* Central Vertical Line */}
-        <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-px bg-gradient-to-b from-blue-500 via-purple-500 to-transparent opacity-30" />
+        <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-1 bg-blue-500/30" />
 
         {EXPERIENCES.map((exp, i) => (
           <motion.div
@@ -36,19 +36,29 @@ export const Experience: React.FC = () => {
             {/* Timeline Dot */}
             <div className="absolute left-4 md:left-1/2 md:-translate-x-1/2 flex items-center justify-center z-20">
               <div className="w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.8)] border-4 border-[#010101]" />
+              
+              {/* Desktop Date Label */}
+              <div className={`absolute hidden md:block whitespace-nowrap px-4 py-1.5 rounded-full bg-zinc-900 border border-white/10 text-xs font-black tracking-[0.2em] text-blue-400 uppercase shadow-xl ${
+                i % 2 === 0 ? 'right-12' : 'left-12'
+              }`}>
+                {exp.period}
+              </div>
             </div>
 
             {/* Content Card */}
             <div className={`w-full md:w-[45%] ml-12 md:ml-0 ${i % 2 === 0 ? 'md:text-right' : 'md:text-left'}`}>
               <div className="p-8 rounded-3xl border border-white/10 bg-zinc-950/95 backdrop-blur-2xl hover:border-blue-500/50 transition-all shadow-2xl group relative overflow-hidden">
+                {/* Mobile Date Label */}
+                <div className="md:hidden mb-4">
+                  <span className="inline-block px-3 py-1 rounded-full bg-zinc-900 border border-white/10 text-blue-400 font-black text-[10px] uppercase tracking-[0.2em]">
+                    {exp.period}
+                  </span>
+                </div>
+
                 {/* Subtle background glow */}
                 <div className="absolute -top-24 -right-24 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl group-hover:bg-blue-500/10 transition-colors" />
                 
                 <div className={`flex flex-col ${i % 2 === 0 ? 'md:items-end' : 'items-start'} mb-6`}>
-                  <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest mb-3">
-                    <Calendar size={12} />
-                    {exp.period}
-                  </span>
                   <h3 className="text-2xl font-bold text-white mb-1 tracking-tight drop-shadow-sm group-hover:text-blue-400 transition-colors">
                     {exp.role}
                   </h3>

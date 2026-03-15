@@ -3,8 +3,8 @@ import { Experience, Project, SkillCategory, Certification, Education } from './
 export const EXPERIENCES: Experience[] = [
   {
     company: "C3 AI",
-    role: "Senior Software Engineer",
-    period: "Present",
+    role: "Software Engineer II",
+    period: "June 2024 - April 2026",
     description: [
       "Served as Forward Deployed Engineer owning the customer account end-to-end, working directly with plant managers and stakeholders to architect system integrations.",
       "Designed and built a large-scale Production Schedule Optimization application used by 200+ Cargill facilities, delivering a high-performance React/Redux UI.",
@@ -39,7 +39,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     company: "John Deere",
-    role: "Software Development Engineer II",
+    role: "Software Engineer II",
     period: "June 2019 - July 2022",
     description: [
       "Engineered the backend architecture across 3 Spring Boot microservices to validate job payloads and process geospatial field data.",
@@ -55,9 +55,16 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "Production Schedule Optimizer",
-    description: "High-performance optimization engine for 200+ industrial facilities, featuring real-time data synchronization and complex constraint modeling.",
-    tech: ["React", "Redux", "Python", "Gurobi", "SAP"],
+    title: "RAG for RAG Research Papers",
+    description: "A specialized Retrieval-Augmented Generation pipeline built to analyze and synthesize insights from a corpus of research papers focused on RAG architectures.",
+    tech: ["Python", "LangChain", "OpenAI", "ChromaDB", "RAG"],
+    github: "https://github.com/piabirajdar/RAG_FOR_RAG_RESEARCH_PAPERS",
+  },
+  {
+    title: "Agent Version Control Code Review",
+    description: "An AI-powered agent designed to automate version control workflows and perform intelligent code reviews, enhancing development productivity and code quality.",
+    tech: ["Python", "LangChain", "OpenAI", "Git", "Multi-Agent Systems"],
+    github: "https://github.com/piabirajdar/AGENT_VERSION_CONTROL_CODE_REVIEW",
   },
   {
     title: "LLM Batch Job Optimizer",
@@ -65,14 +72,19 @@ export const PROJECTS: Project[] = [
     tech: ["LangChain", "LangGraph", "OpenAI", "MCP", "Python"],
   },
   {
-    title: "Farm Management System",
-    description: "Responsive UI and backend architecture for managing large-scale field operations with real-time job status and machine communication.",
-    tech: ["Spring Boot", "React", "Kafka", "MQTT", "PostgreSQL"],
-  },
-  {
     title: "Infrastructure Health Dashboard",
     description: "Real-time visibility into CDN and Load Balancer health metrics, integrating with Prometheus and NetBox.",
     tech: ["React", "GraphQL", "FastAPI", "Prometheus"],
+  },
+  {
+    title: "Infrastructure Metrics Automation",
+    description: "Automated metrics collection system using Golang and PagerDuty APIs, featuring containerized CI/CD pipelines and real-time Grafana dashboards.",
+    tech: ["Golang", "PagerDuty API", "Docker", "AWS EC2", "Grafana"],
+  },
+  {
+    title: "Farm Management System",
+    description: "Responsive UI and backend architecture for managing large-scale field operations with real-time job status and machine communication.",
+    tech: ["Spring Boot", "React", "Kafka", "MQTT", "PostgreSQL"],
   }
 ];
 
